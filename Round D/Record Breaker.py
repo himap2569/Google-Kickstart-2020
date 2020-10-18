@@ -1,4 +1,4 @@
-PROBLEM:
+'''PROBLEM:
 
 Problem
 Isyana is given the number of visitors at her local theme park on N consecutive days. The number of visitors on the i-th day is Vi. A day is record breaking if it satisfies both of the following conditions:
@@ -58,7 +58,7 @@ In Sample Case #3, the first, the third, and the sixth days are record breaking 
 
 In Sample Case #4, there is no record breaking day.
 
-SOLUTION:
+SOLUTION:'''
 
 T = int(input())
 
