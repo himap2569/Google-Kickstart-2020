@@ -64,14 +64,14 @@ def maxcoins(mat,n):
     for col in range(n-1,-1,-1):
         for row in range(n):
             if(row==0 or col==0):
-                right_up=0
+                up=0
             else:
-                right_up=coin[row-1][col-1]
+                up=coin[row-1][col-1]
             if(row==n-1 or col==n-1):
-                right_down=0
+                down=0
             else:
-                right_down=coin[row+1][col+1]
-            coin[row][col]=mat[row][col]+max(right_down,right_up)
+                down=coin[row+1][col+1]
+            coin[row][col]=mat[row][col]+max(down,up)
             ans=max(ans,coin[row][col])
     return ans
     #return max(max(coin))
